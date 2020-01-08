@@ -1,0 +1,17 @@
+.Card {
+    width: 150px;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: 0 2px 3px #cccccc;
+    padding: 16px;
+    text-align: center;
+}
+
+.Line {
+    display: flex;
+}
+
+.ColumLine {
+    flex-direction: column;
+    margin: 0 auto;
+}
