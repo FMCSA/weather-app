@@ -1,3 +1,7 @@
+body {
+  margin: 15px
+}
+
 .City-container {
   display: flex;
   justify-content: center;
