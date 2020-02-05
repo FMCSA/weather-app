@@ -4,9 +4,8 @@ const style = {
   display: "flex",
   margin: "auto",
   padding: "10px",
-  borderWidth: "1px",
-  borderStyle: "solid",
-  borderColor: "lightgray"
+  width: "200px",
+  border: "1px solid black"
 };
 
 const CityInput = props => {
