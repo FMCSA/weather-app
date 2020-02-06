@@ -9,6 +9,7 @@ This web app was made using react hooks and the [metaweather](https://www.metawe
 - Minimalistic
 - Five day weather forecast
 - Search weather by city
+- Autocomplete
 
 ### Built with
 - ES6
@@ -27,9 +28,5 @@ $ npm install
 # Run & Start the app
 $ npm start
 ```
-
-### Todo
- - Add autocomplete input
-
 ### Author
 - Filipe Alves
