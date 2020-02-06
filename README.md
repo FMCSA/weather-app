@@ -3,6 +3,8 @@
 > weather-app is a minimalistic react web App that displays a five day weather forecast. 
 This web app was made using react hooks and the [metaweather](https://www.metaweather.com "MetaWeather Homepage") REST API.
 
+![](demo.gif)
+
 ## Features
 - Minimalistic
 - Five day weather forecast
