@@ -5,11 +5,6 @@ import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
 import axios from 'axios';
 import './App.css';
 
-const getWeekDay = (date) => {
-  const dayOfWeek = new Date(date).getDay();
-  return isNaN(dayOfWeek) ? null : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
-}
-
 function App() {
 
   const maxDays = 5;
@@ -57,6 +52,11 @@ function App() {
         .catch((error) => { console.log("Error getting weather info: " + error) });
     }
   }, [woeid]);
+
+  const getWeekDay = (date) => {
+    const dayOfWeek = new Date(date).getDay();
+    return isNaN(dayOfWeek) ? null : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
+  }
 
   const setInputValue = value => {
     setCity(value);
