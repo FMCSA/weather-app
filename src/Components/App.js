@@ -2,18 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CityButton from './CityButton/CityButton';
 import DayContainer from "./DayContainer/DayContainer";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
-import CityInput from "./CityInput";
 import axios from 'axios';
 import './App.css';
-import cityButton from './CityButton/CityButton';
-
-const style = {
-  display: "flex",
-  margin: "auto",
-  padding: "10px",
-  width: "200px",
-  border: "1px solid black"
-};
 
 const getWeekDay = (date) => {
   const dayOfWeek = new Date(date).getDay();
@@ -78,7 +68,7 @@ function App() {
 
       <input
         type="text"
-        style={style}
+        className="AutoCompleteInput"
         onClick={() => setDisplay(!display)}
         placeholder="Type to search"
         value={city}
@@ -90,14 +80,6 @@ function App() {
           setWoeid(city.woeid);
         }} />))
       }
-
-      {/* <CityInput city={city} setCity={setCity}/>
-
-      {cities.map(city =>
-        <CityButton key={city.woeid} city={city} onClick={() => {
-          setWoeid(city.woeid);
-        }} />
-      )} */}
 
       <div className="DayForecast">
         {load ? <LoadingSpinner /> : <DayContainer weatherInfo={forecast} maxDays={maxDays} />}

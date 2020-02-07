@@ -2,6 +2,14 @@ body {
   margin: 15px
 }
 
+.AutoCompleteInput {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid black;
+}
+
 .City-container {
   display: flex;
   justify-content: center;
